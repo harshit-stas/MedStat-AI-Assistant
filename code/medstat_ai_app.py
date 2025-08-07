@@ -8,6 +8,13 @@ import statsmodels.formula.api as smf
 
 st.set_page_config(page_title="MedStat AI Assistant", layout="wide")
 st.title("🧠 MedStat AI Assistant")
+# Inject CSS
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Animation
+st.markdown('<div class="medico-animation">🩺 MedStat is Ready to Diagnose 📊</div>', unsafe_allow_html=True)
+
 st.markdown("""
 A free, offline AI-like assistant for medical students to understand and perform basic statistical analysis on any dataset.
 Upload your CSV file, and let the app help you choose the right test, run it, show you graphs, and explain the results in simple terms.
