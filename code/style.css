@@ -1,0 +1,15 @@
+/* style.css */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.medico-animation {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0f62fe;
+  text-align: center;
+  margin-top: 10px;
+  animation: pulse 2s infinite;
+}
